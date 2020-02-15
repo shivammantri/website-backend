@@ -5,8 +5,8 @@
             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
     <persistence-unit name="sql">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.northeast.entites.User</class>
-        <!--<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>-->
+        <class></class>
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/website?useSSL=false"/>

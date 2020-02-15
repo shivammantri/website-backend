@@ -4,6 +4,7 @@ import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.AbstractModule;
 import com.google.inject.persist.jpa.JpaPersistModule;
+import com.northeast.CoreModule;
 
 public class WebsiteModule extends AbstractModule {
     private final ObjectMapper objectMapper;
@@ -18,5 +19,6 @@ public class WebsiteModule extends AbstractModule {
         bind(ObjectMapper.class).toInstance(objectMapper);
         bind(MetricRegistry.class).toInstance(metricRegistry);
         install(new JpaPersistModule("sql"));
+        install(new CoreModule());
     }
 }

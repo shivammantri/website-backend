@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="app" />
         <module name="core" />
+        <module name="models" />
       </profile>
     </annotationProcessing>
   </component>
