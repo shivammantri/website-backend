@@ -3,26 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7be5e390-063d-4ec7-b7c2-f99a0fc1c140" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/config/local/configuration.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/config/local/configuration.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/com/northeast/bootstrap/WebsiteModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/com/northeast/resource/SampleResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/com/northeast/resource/SampleResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/com/northeast/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/com/northeast/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/classes/config/local/configuration.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/classes/config/local/configuration.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/northeast/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/northeast/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/northeast/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/northeast/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/models/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/target/classes/com/northeast/models/request/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/models/target/classes/com/northeast/models/request/UserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,20 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JpaPersistService.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-persist/4.1.0/guice-persist-4.1.0.jar!/com/google/inject/persist/jpa/JpaPersistService.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="181">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,11 +37,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Response.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar!/javax/ws/rs/core/Response.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/helper/Validator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EncryptionService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="855">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,29 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotNull.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/constraints/NotNull.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="570">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRequest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/UserRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -181,7 +163,6 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/northeast/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/northeast/CoreModule.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/northeast/dao/BaseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/app/pom.xml" />
         <option value="$PROJECT_DIR$/models/src/main/java/com/northeast/models/SourceOfInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/models/pom.xml" />
@@ -196,16 +177,18 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/northeast/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/northeast/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteConfiguration.java" />
         <option value="$PROJECT_DIR$/app/src/main/resources/config/local/configuration.yml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteApplication.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteModule.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java" />
         <option value="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/LoginRequest.java" />
         <option value="$PROJECT_DIR$/models/src/main/java/com/northeast/models/request/UserRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java" />
+        <option value="$PROJECT_DIR$/app/pom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/northeast/helper/Validator.java" />
       </list>
     </option>
   </component>
@@ -282,6 +265,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="northeast" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="northeast" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
@@ -444,6 +437,85 @@
               <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="regex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.validation:validation-api:2.0.1.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.validation:validation-api:2.0.1.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="validation-api-2.0.1.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.validation:validation-api:2.0.1.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="validation-api-2.0.1.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.ws.rs-api-2.1.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.ws.rs-api-2.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.ws.rs-api-2.1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rs" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -559,7 +631,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -721,24 +792,6 @@
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="28" />
     </breakpoint-manager>
@@ -767,34 +820,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-persist/4.1.0/guice-persist-4.1.0.jar!/com/google/inject/persist/jpa/JpaLocalTxnInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManagerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.1.0/guice-4.1.0-sources.jar!/com/google/inject/AbstractModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-persist/4.1.0/guice-persist-4.1.0.jar!/com/google/inject/persist/jpa/JpaPersistModule.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1018,13 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar!/javax/ws/rs/core/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="212" column="8" selection-start-line="212" selection-start-column="8" selection-end-line="212" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/resource/SampleResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1117,54 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/constraints/NotNull.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -1185,6 +1159,85 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/constraints/NotNull.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/bootstrap/WebsiteConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/EncryptionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/ConstraintValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.4.3.Final/hibernate-validator-5.4.3.Final.jar!/org/hibernate/validator/internal/constraintvalidators/hv/EmailValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/resource/UserResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar!/javax/ws/rs/core/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/northeast/helper/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>

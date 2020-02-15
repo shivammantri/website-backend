@@ -6,6 +6,7 @@ import com.northeast.bootstrap.WebsiteConfiguration;
 import com.northeast.dao.UserDao;
 import com.northeast.entites.User;
 import com.northeast.helper.IdGenerator;
+import com.northeast.helper.Validator;
 import com.northeast.mapper.UserMapper;
 import com.northeast.models.exceptions.UserException;
 import com.northeast.models.request.LoginRequest;
@@ -28,10 +29,17 @@ public class UserService {
 
     @Transactional
     public void register(UserRequest userRequest) {
+        //validate emailId and mobile number
+        if(!Validator.validateEmail(userRequest.getEmailId())) {
+            throw new UserException("EmailId not valid.", Response.Status.BAD_REQUEST);
+        }
+        if(!Validator.validateMobile(userRequest.getMobile())) {
+            throw new UserException("Mobile Number not valid.", Response.Status.BAD_REQUEST);
+        }
         //Check if already exists
         Optional<User> userInDb = userDao.findByEmailOrMobile(userRequest.getEmailId(), userRequest.getMobile());
         if(userInDb.isPresent()) {
-            throw new UserException("EmailId or Mobile already exists.", Response.Status.CONFLICT);
+            throw new UserException("EmailId or Mobile number already exists.", Response.Status.CONFLICT);
         }
         //Map to new user
         User user = userMapper.mapRequestToEntity(userRequest);
@@ -48,6 +56,10 @@ public class UserService {
 
     @Transactional
     public boolean login(LoginRequest loginRequest) {
+        //validate emailId
+        if(!Validator.validateEmail(loginRequest.getEmailId())) {
+            throw new UserException("EmailId not valid.", Response.Status.BAD_REQUEST);
+        }
         //Get user with email
         Optional<User> userInDb = userDao.findByEmail(loginRequest.getEmailId());
         if(!userInDb.isPresent()) {
