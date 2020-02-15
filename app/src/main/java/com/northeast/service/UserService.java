@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.persist.Transactional;
 import com.northeast.dao.UserDao;
 import com.northeast.entites.User;
+import com.northeast.helper.IdGenerator;
 import com.northeast.models.request.UserRequest;
 
 public class UserService {
@@ -23,7 +24,7 @@ public class UserService {
         user.setMobile(userRequest.getMobile());
         user.setSourceOfInfo(userRequest.getSourceOfInfo());
         user.setPassword(userRequest.getPassword());
-        user.setUserId("User1");
+        user.setUserId(IdGenerator.generateUserId());
         userDao.create(user);
     }
 }

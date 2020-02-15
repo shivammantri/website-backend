@@ -19,6 +19,7 @@ public class User {
     private Long id;
 
     @JsonProperty
+    @Column(name = "userId", unique = true)
     private String userId;
 
     @JsonProperty
@@ -28,9 +29,11 @@ public class User {
 
     //ToDo: Email validator
     @JsonProperty
+    @Column(name = "emailId", unique = true)
     private String emailId;
 
     @JsonProperty
+    @Column(name = "mobile", unique = true)
     private String mobile;
 
     @Enumerated(EnumType.STRING)
