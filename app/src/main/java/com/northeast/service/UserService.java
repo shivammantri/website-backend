@@ -2,6 +2,7 @@ package com.northeast.service;
 
 import com.google.inject.Inject;
 import com.google.inject.persist.Transactional;
+import com.northeast.bootstrap.WebsiteConfiguration;
 import com.northeast.dao.UserDao;
 import com.northeast.entites.User;
 import com.northeast.helper.IdGenerator;
@@ -16,13 +17,13 @@ import java.util.Optional;
 public class UserService {
     private final UserDao userDao;
     private final UserMapper userMapper;
-    private final EncryptionService encryptionService;
+    private final String secret;
 
     @Inject
-    public UserService(UserDao userDao, UserMapper userMapper, EncryptionService encryptionService) {
+    public UserService(UserDao userDao, UserMapper userMapper, WebsiteConfiguration websiteConfiguration) {
         this.userDao = userDao;
         this.userMapper = userMapper;
-        this.encryptionService = encryptionService;
+        this.secret = websiteConfiguration.getSecret();
     }
 
     @Transactional
@@ -35,7 +36,7 @@ public class UserService {
         //Map to new user
         User user = userMapper.mapRequestToEntity(userRequest);
         user.setUserId(IdGenerator.generateUserId());
-        user.setPassword(encryptionService.encrypt(userRequest.getPassword()));
+        user.setPassword(EncryptionService.encrypt(userRequest.getPassword(), secret));
         //Persist
         try {
             userDao.create(user);
@@ -58,7 +59,7 @@ public class UserService {
     }
 
     private boolean validate(String enteredPassword, String passwordInDb) {
-        String decryptedPassword = encryptionService.decrypt(passwordInDb);
+        String decryptedPassword = EncryptionService.decrypt(passwordInDb, secret);
         return enteredPassword.equals(decryptedPassword);
     }
 }

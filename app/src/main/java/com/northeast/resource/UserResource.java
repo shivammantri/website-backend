@@ -6,6 +6,9 @@ import com.northeast.models.request.LoginRequest;
 import com.northeast.models.request.UserRequest;
 import com.northeast.service.UserService;
 
+import javax.validation.Valid;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -21,16 +24,20 @@ public class UserResource {
         this.userService = userService;
     }
 
+    @POST
     @Path("/register")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response register(UserRequest userRequest) {
+    public Response register(@Valid UserRequest userRequest) {
         userService.register(userRequest);
         return Response.ok("Successfully registered!").build();
     }
 
+    @POST
     @Path("/login")
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(LoginRequest loginRequest) {
+    public Response login(@Valid LoginRequest loginRequest) {
         boolean authorized = userService.login(loginRequest);
         if(!authorized) {
             throw new UserException("Password doesn't match.", Response.Status.UNAUTHORIZED);

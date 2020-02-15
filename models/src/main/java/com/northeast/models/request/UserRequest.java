@@ -1,8 +1,9 @@
 package com.northeast.models.request;
 
 import com.northeast.models.SourceOfInfo;
-import com.sun.istack.internal.NotNull;
 import lombok.Data;
+
+import javax.validation.constraints.NotNull;
 
 @Data
 public class UserRequest {

@@ -34,3 +34,5 @@ logging:
       maxFileSize: 100MB
       timeZone: IST
       logFormat: "%date %level [%thread] %logger{10} [%X{id}] %msg%n\n"
+
+secret: "MeraPehlaStartup"
