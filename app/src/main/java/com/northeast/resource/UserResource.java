@@ -42,6 +42,15 @@ public class UserResource {
         return userService.login(loginRequest);
     }
 
+    @POST
+    @Path("/logout")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response login(String sessionId) {
+        userService.logout(sessionId);
+        return Response.ok("Successfully logged out!").build();
+    }
+
     //reset
     //logout
 }

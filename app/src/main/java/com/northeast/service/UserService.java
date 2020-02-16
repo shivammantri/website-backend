@@ -16,11 +16,12 @@ import com.northeast.models.exceptions.UserException;
 import com.northeast.models.request.LoginRequest;
 import com.northeast.models.request.UserRequest;
 import com.northeast.models.response.LoginResponse;
-import jdk.internal.org.objectweb.asm.TypeReference;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.ws.rs.core.Response;
 import java.util.Optional;
 
+@Slf4j
 public class UserService {
     private final UserDao userDao;
     private final UserMapper userMapper;
@@ -93,6 +94,21 @@ public class UserService {
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setSessionId(sessionId);
         return loginResponse;
+    }
+
+    @Transactional
+    public void logout(String sessionId) {
+        Optional<Session> session = sessionDao.getSessionBySessionId(sessionId);
+        if(!session.isPresent()) {
+            log.error("No session exist for id :: " + sessionId);
+        }
+        session.get().setSessionStatus(SessionStatus.CLOSED);
+        try {
+            sessionDao.update(session.get());
+        }
+        catch (Exception e) {
+            throw new UserException("Internal Serval Error!", Response.Status.INTERNAL_SERVER_ERROR);
+        }
     }
 
     private Session getSession(String userId) {
