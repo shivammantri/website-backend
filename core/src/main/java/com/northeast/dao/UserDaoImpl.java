@@ -10,7 +10,7 @@ import org.hibernate.criterion.Restrictions;
 import javax.persistence.EntityManager;
 import java.util.Optional;
 
-public class UserDaoImpl extends BaseDaoImpl<User, String> implements UserDao {
+public class UserDaoImpl extends BaseDaoImpl<User, Long> implements UserDao {
     @Inject
     public UserDaoImpl(Provider<EntityManager> entityManagerProvider) {
         super(entityManagerProvider);

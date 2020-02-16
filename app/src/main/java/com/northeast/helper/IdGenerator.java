@@ -18,4 +18,8 @@ public class IdGenerator {
     public static String generateUserId(){
         return "NEY"+getUUIDGeneratedValue();
     }
+
+    public static String generateSessionId() {
+        return "SE" + getUUIDGeneratedValue();
+    }
 }

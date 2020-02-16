@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.northeast.models.exceptions.UserException;
 import com.northeast.models.request.LoginRequest;
 import com.northeast.models.request.UserRequest;
+import com.northeast.models.response.LoginResponse;
 import com.northeast.service.UserService;
 
 import javax.validation.Valid;
@@ -37,13 +38,10 @@ public class UserResource {
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(@Valid LoginRequest loginRequest) {
-        boolean authorized = userService.login(loginRequest);
-        if(!authorized) {
-            throw new UserException("Password doesn't match.", Response.Status.UNAUTHORIZED);
-        }
-        return Response.ok("Logged in!").build();
+    public LoginResponse login(@Valid LoginRequest loginRequest) {
+        return userService.login(loginRequest);
     }
 
     //reset
+    //logout
 }
