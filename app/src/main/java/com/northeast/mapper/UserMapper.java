@@ -11,6 +11,7 @@ public class UserMapper {
         user.setEmailId(userRequest.getEmailId());
         user.setMobile(userRequest.getMobile());
         user.setSourceOfInfo(userRequest.getSourceOfInfo());
+        user.setFormEligible(true);
         return user;
     }
 }

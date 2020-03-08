@@ -45,4 +45,6 @@ public class User {
     @JsonProperty
     @Column(name = "pass")
     private String password;
+
+    private Boolean formEligible;
 }
