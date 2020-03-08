@@ -45,4 +45,13 @@ public class FormResource {
                                     @PathParam("userId") String userId) {
         return formService.getUserForm(username, password, userId);
     }
+
+    @POST
+    @Path("/eligibility")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response stopEligiblity(@QueryParam("username")String username, @QueryParam("password")String password) {
+        formService.stopEligibility(username, password);
+        return Response.ok("Stopped form eligibility!").build();
+    }
 }

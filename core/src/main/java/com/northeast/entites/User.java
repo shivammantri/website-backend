@@ -46,5 +46,5 @@ public class User {
     @Column(name = "pass")
     private String password;
 
-    private Boolean formEligible;
+    private Boolean formEligible = Boolean.TRUE;
 }

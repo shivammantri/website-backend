@@ -8,9 +8,10 @@ public class IdGenerator {
     private final static Random rand = new Random();
 
     private static String getUUIDGeneratedValue() {
+        long currentTime = System.nanoTime();
         long randomNumber = (long) (rand.nextInt(999) + 1000);
-        String uuid = UUID.randomUUID().toString();
-        return uuid + randomNumber;
+        String uuid = new UUID(currentTime, currentTime).toString();
+        return uuid.substring(uuid.length() - 6) + randomNumber;
     }
 
     public static String generateUserId(){
@@ -18,6 +19,9 @@ public class IdGenerator {
     }
 
     public static String generateSessionId() {
-        return "SE" + getUUIDGeneratedValue();
+        long randomNumber = (long) (rand.nextInt(999) + 1000);
+        String uuid = UUID.randomUUID().toString();
+        String randomUUID =  uuid + randomNumber;
+        return "SE" + randomUUID;
     }
 }

@@ -7,8 +7,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.google.inject.Guice;
+import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.persist.PersistService;
+import com.northeast.helper.Eligibility;
 import com.northeast.models.exceptions.UserExceptionMapper;
 import com.northeast.models.request.UserRequest;
 import com.northeast.resource.SampleResource;
@@ -39,6 +41,7 @@ public class WebsiteApplication extends Application<WebsiteConfiguration> {
         environment.jersey().register(injector.getInstance(UserResource.class));
         injector.getInstance(PersistService.class).start();
         log.info("Website Application is up!");
+        enableEligibility(injector);
     }
 
     @Override
@@ -51,5 +54,10 @@ public class WebsiteApplication extends Application<WebsiteConfiguration> {
         SimpleModule simpleModule = new SimpleModule();
         objectMapper.registerModule(simpleModule);
         objectMapper.setTimeZone(TimeZone.getDefault());
+    }
+
+    private void enableEligibility(Injector injector) {
+        Eligibility eligibility = injector.getInstance(Eligibility.class);
+        eligibility.setFormEligibility(Boolean.TRUE);
     }
 }

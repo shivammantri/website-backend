@@ -9,7 +9,7 @@ public class Validator {
     }
 
     public static boolean validateMobile(String mobile) {
-        String pattern = "^[0-9]{10}$";
-        return pattern.matches(mobile);
+        //ToDo
+        return true;
     }
 }
