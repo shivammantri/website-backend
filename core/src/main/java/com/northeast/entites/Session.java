@@ -3,10 +3,7 @@ package com.northeast.entites;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -16,6 +13,7 @@ public class Session {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String sessionId;
+    @Enumerated(EnumType.STRING)
     private SessionStatus sessionStatus;
-    private SessionData data;
+    private String userId;
 }

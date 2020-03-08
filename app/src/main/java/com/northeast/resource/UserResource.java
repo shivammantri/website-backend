@@ -8,11 +8,9 @@ import com.northeast.models.response.LoginResponse;
 import com.northeast.service.UserService;
 
 import javax.validation.Valid;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.NewCookie;
 import javax.ws.rs.core.Response;
 
 @Path("/user")
@@ -38,19 +36,20 @@ public class UserResource {
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public LoginResponse login(@Valid LoginRequest loginRequest) {
-        return userService.login(loginRequest);
+    public Response login(@Valid LoginRequest loginRequest) {
+        LoginResponse loginResponse = userService.login(loginRequest);
+        return Response.ok("Successfully logged in!").cookie(
+                new NewCookie("NEYSessionId", loginResponse.getSessionId())).build();
     }
 
     @POST
-    @Path("/logout")
+    @Path("/logout/{sessionId}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(String sessionId) {
-        userService.logout(sessionId);
-        return Response.ok("Successfully logged out!").build();
+    public Response login(@PathParam("sessionId") String sessionId) {
+        String message = userService.logout(sessionId);
+        return Response.ok(message).build();
     }
 
     //reset
-    //logout
 }

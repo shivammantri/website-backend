@@ -97,10 +97,13 @@ public class UserService {
     }
 
     @Transactional
-    public void logout(String sessionId) {
+    public String logout(String sessionId) {
         Optional<Session> session = sessionDao.getSessionBySessionId(sessionId);
         if(!session.isPresent()) {
-            log.error("No session exist for id :: " + sessionId);
+            throw new UserException("No session exist for id :: " + sessionId, Response.Status.NOT_FOUND);
+        }
+        if(session.get().getSessionStatus().equals(SessionStatus.CLOSED)) {
+            return "Session already closed";
         }
         session.get().setSessionStatus(SessionStatus.CLOSED);
         try {
@@ -109,14 +112,15 @@ public class UserService {
         catch (Exception e) {
             throw new UserException("Internal Serval Error!", Response.Status.INTERNAL_SERVER_ERROR);
         }
+        return "Sucessfully logged out!";
     }
 
     private Session getSession(String userId) {
         Session session = new Session();
         session.setSessionStatus(SessionStatus.ACTIVE);
-        SessionData sessionData = new SessionData();
-        sessionData.setUserId(userId);
-        session.setData(sessionData);
+//        SessionData sessionData = new SessionData();
+//        sessionData.setUserId(userId);
+        session.setUserId(userId);
         return session;
     }
 
