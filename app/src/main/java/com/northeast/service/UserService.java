@@ -93,6 +93,7 @@ public class UserService {
         }
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setSessionId(sessionId);
+        loginResponse.setFormEligibility(userInDb.get().getFormEligible());
         return loginResponse;
     }
 

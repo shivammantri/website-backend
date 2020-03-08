@@ -38,6 +38,7 @@ public class UserResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response login(@Valid LoginRequest loginRequest) {
         LoginResponse loginResponse = userService.login(loginRequest);
+        //ToDO : Send form eligible
         return Response.ok("Successfully logged in!").cookie(
                 new NewCookie("NEYSessionId", loginResponse.getSessionId())).build();
     }
