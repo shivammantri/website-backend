@@ -51,7 +51,6 @@ public class BaseDaoImpl<ENTITY, IDENTIFIER extends Serializable> implements Bas
     }
 
     private void handlePersistenceException(PersistenceException e) {
-        //TODO handle it better
         Throwable cause = e.getCause();
         Class clazz = getEntityClass();
         if(e.getCause() != null && cause instanceof ConstraintViolationException){
@@ -72,7 +71,6 @@ public class BaseDaoImpl<ENTITY, IDENTIFIER extends Serializable> implements Bas
     @Override
     public void update(ENTITY entity) {
         getEntityManager().persist(entity);
-        //ToDo: Check this
     }
 
     @Override

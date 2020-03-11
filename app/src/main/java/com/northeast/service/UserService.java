@@ -6,7 +6,6 @@ import com.northeast.bootstrap.WebsiteConfiguration;
 import com.northeast.dao.SessionDao;
 import com.northeast.dao.UserDao;
 import com.northeast.entites.Session;
-import com.northeast.entites.SessionData;
 import com.northeast.entites.SessionStatus;
 import com.northeast.entites.User;
 import com.northeast.helper.IdGenerator;
@@ -17,6 +16,7 @@ import com.northeast.models.request.LoginRequest;
 import com.northeast.models.request.UserRequest;
 import com.northeast.models.response.LoginResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.tuple.Pair;
 
 import javax.ws.rs.core.Response;
 import java.util.Optional;
@@ -66,7 +66,7 @@ public class UserService {
     }
 
     @Transactional
-    public LoginResponse login(LoginRequest loginRequest) {
+    public Pair<LoginResponse, String> login(LoginRequest loginRequest) {
         //validate emailId
         if(!Validator.validateEmail(loginRequest.getEmailId())) {
             throw new UserException("EmailId not valid.", Response.Status.BAD_REQUEST);
@@ -92,9 +92,8 @@ public class UserService {
             throw new UserException("Internal Server Error! Please try again!", Response.Status.INTERNAL_SERVER_ERROR);
         }
         LoginResponse loginResponse = new LoginResponse();
-        loginResponse.setSessionId(sessionId);
         loginResponse.setFormEligibility(userInDb.get().getFormEligible());
-        return loginResponse;
+        return Pair.of(loginResponse, sessionId);
     }
 
     @Transactional

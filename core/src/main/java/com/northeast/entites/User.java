@@ -27,7 +27,6 @@ public class User {
     @JsonProperty
     private String lastName;
 
-    //ToDo: Email validator
     @JsonProperty
     @Column(name = "emailId", unique = true)
     private String emailId;
@@ -41,7 +40,6 @@ public class User {
     @Column(name = "source")
     private SourceOfInfo sourceOfInfo;
 
-    //ToDo: Encrypt
     @JsonProperty
     @Column(name = "pass")
     private String password;
